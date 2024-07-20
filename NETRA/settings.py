@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'Main',
     'allauth',
     'allauth.account',
-    'allauth.socialaccount',
+    #'allauth.socialaccount',
 ]
 
 MIDDLEWARE = [
@@ -56,6 +56,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'NETRA.urls'
+
 
 TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
 
