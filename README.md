@@ -96,7 +96,10 @@ If there's a requirements.txt file in the project, this command installs all the
 ## Video
 
 * **Dashboard -**
-* 
+ 
+https://github.com/user-attachments/assets/a136dca5-2009-44c3-bdfa-4b29d06bcd5a
+
+
 
 ## Conclusion
 
