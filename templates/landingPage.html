@@ -2,20 +2,19 @@
 
 {% block title %} Landing Page {% endblock %}
 
-
-
 {% block content %}
 
 <!-- Add all the LandingPage code here-->
 <!-- Inside base.html -->
-    <!-- home -->
+
+    <!-- Home -->
     <section class="home container" id="home">
         <!-- <h1 class="section-title">Welcome to Our Website</h1> -->
         <div class="home-text">
             <h1>Find Your Next<br> Perfect Place To<br> Live</h1>
 
             {% if user.is_authenticated %}
-                <a href="{% url 'main:dashboard' %}" class="btn">Start Monitoring ></a>
+                <a href="{% url 'main:info' %}" class="btn">Start Monitoring ></a>
             {% else %}
                 <a href="{% url 'account_login' %}" class="btn">Get Started ></a>
             {% endif %}
@@ -31,14 +30,14 @@
         <div class="container4">
             <div class="card">
                 <div class="card__inner">
-                    <div class="card__face card__face--front">
-                        <img src="static/img/feature/a.png" alt="" class="icon" />
+                    <div class="card_face card_face--front">
+                        <img src="/static/img/x.png" alt="" class="icon" />
                         <h2>Based On AI Technology</h2>
                     </div>
-                    <div class="card__face card__face--back">
+                    <div class="card_face card_face--back">
                         <div class="card__content">
                             <div class="card__header">
-                                <img src="static/img/feature/a.png" alt="" class="pp" />
+                                <img src="/static/img/x.png" alt="" class="pp" />
                                 <h2>Based On AI Technology</h2>
                             </div>
                             <div class="card__body">
@@ -52,18 +51,18 @@
 
             <div class="card">
                 <div class="card__inner">
-                    <div class="card__face card__face--front">
-                        <img src="static/img/feature/b.png" alt="" class="icon" />
+                    <div class="card_face card_face--front">
+                        <img src="/static/img/y.png" alt="" class="icon" />
                         <h2>Real Time Monitoring</h2>
                     </div>
-                    <div class="card__face card__face--back">
+                    <div class="card_face card_face--back">
                         <div class="card__content">
                             <div class="card__header">
-                                <img src="static/img/feature/b.png" alt="" class="pp" />
+                                <img src="/static/img/y.png" alt="" class="pp" />
                                 <h2>Real Time Monitoring</h2>
                             </div>
                             <div class="card__body">
-                                <h3>Real Time</h3>
+                                <h3>Real Time </h3>
                                 <p>Lorem ipsum <strong>dolor</strong> sit amet, consectetur <strong>adipiscing</strong> elit. Sed id erat a magna lobortis dictum. Nunc est arcu, <strong>lacinia</strong> quis sapien placerat, <strong>laoreet</strong> tincidunt nulla.</p>
                             </div>
                         </div>
@@ -73,14 +72,14 @@
 
             <div class="card">
                 <div class="card__inner">
-                    <div class="card__face card__face--front">
-                        <img src="static/img/feature/c.png" alt="" class="icon" />
+                    <div class="card_face card_face--front">
+                        <img src="/static/img/z.png" alt="" class="icon" />
                         <h2>Smart Safety Feature</h2>
                     </div>
-                    <div class="card__face card__face--back">
+                    <div class="card_face card_face--back">
                         <div class="card__content">
                             <div class="card__header">
-                                <img src="static/img/feature/c.png" alt="" class="pp" />
+                                <img src="/static/img/z.png" alt="" class="pp" />
                                 <h2>Smart Safety Feature</h2>
                             </div>
                             <div class="card__body">
@@ -104,10 +103,10 @@
 
             <div class="card1">
                 <div class="imgBx">
-                    <img src="static/img/services/img1.png">
+                    <img src="/static/img/img1.jpg">
                 </div>
                 <div class="content">
-                    <h2>Accident Detection</h2>
+                    <h2>Deep learning based</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus reprehenderit dolorem et maiores, reiciendis magni optio magnam ipsam non rerum placeat. Saepe velit molestias rerum ducimus. Aliquid ab culpa tempore.</p>
                 </div>
 
@@ -115,29 +114,29 @@
 
             <div class="card1">
                 <div class="imgBx">
-                    <img src="static/img/services/img2.png">
+                    <img src="/static/img/img2.jpg">
                 </div>
 
                 <div class="content">
-                    <h2>Traffic Monitoring</h2>
+                    <h2>Real-time insights</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta corporis facere aliquid ab suscipit harum cumque minus perferendis ut quis maxime nostrum delectus voluptates deserunt error, totam repellendus quas dignissimos?</p>
                 </div>
             </div>
 
             <div class="card1">
                 <div class="imgBx">
-                    <img src="static/img/services/img3.png">
+                    <img src="/static/img/img3.jpg">
                 </div>
 
                 <div class="content">
-                    <h2>Pothole Identification</h2>
+                    <h2>Anomaly detection</h2>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, soluta. Consequatur fuga aliquid dolor iure molestias voluptates ut repellendus molestiae? Labore esse quidem eum distinctio assumenda excepturi sapiente non laboriosam.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- testimonial -->
+    <!-- testinomial -->
     <section class="testimonial" id="testimonial">
 
         <h1 class="section-title">Our Testimonials</h1>
@@ -178,11 +177,11 @@
 
                 </div>
                 <div class="testimonial-pic">
-                    <img src="static/img/testimonials/user1.png" class="user-pic" onclick="showReview()">
-                    <img src="static/img/testimonials/user2.png" class="user-pic active-pic" onclick="showReview()">
-                    <img src="static/img/testimonials/user3.png" class="user-pic" onclick="showReview()">
-                    <img src="static/img/testimonials/user4.png" class="user-pic" onclick="showReview()">
-                    <img src="static/img/testimonials/user5.png" class="user-pic" onclick="showReview()">
+                    <img src="/static/img/user1.png" class="user-pic" onclick="showReview()">
+                    <img src="/static/img/user2.png" class="user-pic active-pic" onclick="showReview()">
+                    <img src="/static/img/user3.png" class="user-pic" onclick="showReview()">
+                    <img src="/static/img/user4.png" class="user-pic" onclick="showReview()">
+                    <img src="/static/img/user5.png" class="user-pic" onclick="showReview()">
                 </div>
             </div>
         </div>
@@ -202,18 +201,18 @@
                         <h2>Contact Info</h2>
                         <ul class="info">
                             <li>
-                                <span><img src="/static/img/contact/location.png" alt=""></span>
+                                <span><img src="/static/img/location.png" alt=""></span>
                                 <span>Pune,MH- 415 005</span>
                             </li>
 
                             <li>
-                                <span><img src="/static/img/contact/mail.png" alt=""></span>
+                                <span><img src="/static/img/mail.png" alt=""></span>
                                 <span>safetyNXT@gmail.com</span>
                             </li>
 
 
                             <li>
-                                <span><img src="/static/img/contact/call.png" alt=""></span>
+                                <span><img src="/static/img/call.png" alt=""></span>
                                 <span>00000 00000</span>
                             </li>
                         </ul>
@@ -290,7 +289,7 @@
                             <span class="overlay"></span>
 
                             <div class="card-image">
-                                <img src="static/img/team/1.jpg" alt="" class="card-img">
+                                <img src="/static/img/1.jpg" alt="" class="card-img">
                             </div>
                         </div>
 
@@ -304,7 +303,7 @@
                             <span class="overlay"></span>
 
                             <div class="card-image">
-                                <img src="static/img/team/F.jpg" alt="" class="card-img">
+                                <img src="/static/img/6.jpg" alt="" class="card-img">
                             </div>
                         </div>
 
@@ -318,7 +317,7 @@
                             <span class="overlay"></span>
 
                             <div class="card-image">
-                                <img src="static/img/team/3.jpg" alt="" class="card-img">
+                                <img src="/static/img/3.jpg" alt="" class="card-img">
                             </div>
                         </div>
 
@@ -332,7 +331,7 @@
                             <span class="overlay"></span>
 
                             <div class="card-image">
-                                <img src="static/img/team/5.jpg" alt="" class="card-img">
+                                <img src="/static/img/5.jpg" alt="" class="card-img">
                             </div>
                         </div>
 
@@ -346,7 +345,7 @@
                             <span class="overlay"></span>
 
                             <div class="card-image">
-                                <img src="static/img/team/4.jpg" alt="" class="card-img">
+                                <img src="/static/img/4.jpg" alt="" class="card-img">
                             </div>
                         </div>
 
@@ -360,7 +359,7 @@
                             <span class="overlay"></span>
 
                             <div class="card-image">
-                                <img src="static/img/team/2.jpg" alt="" class="card-img">
+                                <img src="/static/img/2.jpg" alt="" class="card-img">
                             </div>
                         </div>
 
