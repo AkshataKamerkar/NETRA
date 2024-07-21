@@ -97,7 +97,7 @@ If there's a requirements.txt file in the project, this command installs all the
 
 * **Crowd Model -** https://youtu.be/AGwf9yHCVPg
  
-* **Crime Notebook -**
+* **Crime Notebook -** https://colab.research.google.com/drive/14TWBB6e205qkyP3m3tOdez3lscwQSIDD?usp=sharing
 
 * **Dashboard -**
  
