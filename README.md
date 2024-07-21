@@ -95,7 +95,9 @@ If there's a requirements.txt file in the project, this command installs all the
 
 ## Video
 
-![App Screenshot](ScreenShots/WebPage1.png)
+* **Dashboard -**
+* 
+
 ## Conclusion
 
 In conclusion, Indian Railways, a lifeline for millions, faces safety challenges. Current CCTV systems lack real-time intelligence, hindering proactive response.
