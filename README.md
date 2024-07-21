@@ -93,13 +93,17 @@ If there's a requirements.txt file in the project, this command installs all the
 
 * **Accessing the Application :** Once the Django application is running, access it through your web browser using the provided address (usually http://127.0.0.1:5000/ or http://localhost:5000/). 
 
-## Video
+## Demo
+
+* **Crowd Model -** https://youtu.be/AGwf9yHCVPg
+ 
+* **Crime Notebook -**
 
 * **Dashboard -**
  
 https://github.com/user-attachments/assets/a136dca5-2009-44c3-bdfa-4b29d06bcd5a
 
-
+* **Landing Page -** 
 
 ## Conclusion
 
